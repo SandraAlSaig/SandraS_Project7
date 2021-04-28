@@ -1,0 +1,74 @@
+*,
+body {
+  box-sizing: border-box;
+  margin: auto;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  padding: .4em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  height: 90px;
+  /* border: 1px solid #565557; */
+  background-color: #9f95a3;
+}
+.bell-icon {
+  fill: white;
+}
+
+.vl {
+  margin-top: .5em;
+  border-left: 2px solid #565557;
+  height: 50px;
+  position: absolute;
+  left: 47%;
+}
+
+.profile-img {
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+
+.nav-bar {
+    color: white;
+    margin: auto;
+    padding: 1em;
+    display:flex;
+    justify-content: space-around;
+    gap: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #76697a;
+}
+
+.home-icon,
+.chart-icon,
+.settings-icon,
+.members-icon {
+  width: 40px;
+}
+
+.dashboard {
+  display: flex;
+  padding: 1em;
+}
+.alert {
+  border: 2px solid black;
+  padding: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .nav-bar {
+    display: grid;
+    float: left;
+    max-height: none;
+
+
+  }
+}
