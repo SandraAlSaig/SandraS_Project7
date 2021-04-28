@@ -38,13 +38,12 @@ header {
 .nav-bar {
     color: white;
     margin: auto;
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
     background-color: #76697a;
 }
 
@@ -60,7 +59,8 @@ header {
   padding: 1em;
 }
 .alert {
-  border: 2px solid black;
+  margin: auto;
+  border: 1px solid black;
   padding: 1.5em;
 }
 
@@ -69,9 +69,17 @@ header {
     flex-direction: column;
     float: left;
     max-height: none;
-
-
+    padding: .8em;
   }
+
+  .home-icon,
+  .chart-icon,
+  .settings-icon,
+  .members-icon {
+    width: 30px;
+    padding-bottom: 1em;
+  }
+
   .alert {
     /* float: left; */
   }
