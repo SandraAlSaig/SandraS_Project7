@@ -92,6 +92,7 @@ a {
 }
 
 input {
+  padding: .5em;
   width: 100%;
   background-color: lightgrey;
   height: 60px;
@@ -123,6 +124,10 @@ input {
   padding-right: .6em;
   background-color: #584e63;
   border-radius: 38%;
+}
+
+canvas {
+    max-width: 100%;
 }
 
                               /* Media queries */
