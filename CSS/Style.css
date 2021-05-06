@@ -39,13 +39,14 @@ body {
   overflow: auto;
 }
 
-.bell-icon {
-  fill: white;
+#bellsvg {
+  margin-top: 1em;
+  height: 30px;
 }
 
-#notification-dropdown {
-margin-top: 1em;
-}
+/* .dropdown {
+  display: flex;
+} */
 
 .vl {
   border-left: 2px solid #584e63;
