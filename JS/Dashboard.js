@@ -9,7 +9,3 @@ const doughnutCanvas = document.querySelector('#doughnut-chart');
 // bellSvg.addEventListener ("click", () => {
 //   alert("It works!");
 // });
-//
-// notification.addEventListener("click", () => {
-//   alert("It works!");
-// })
