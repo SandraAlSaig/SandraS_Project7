@@ -42,11 +42,81 @@ body {
 #bellsvg {
   margin-top: 1em;
   height: 30px;
+  margin-right:  1.3em;
+}
+                        /* Dropdown Start*/
+#dropBtn {
+  display: flex;
 }
 
-/* .dropdown {
-  display: flex;
-} */
+.dropbtn {
+  background-color: lime;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  border-radius: 10%;
+  border: 1px solid lightgray;
+  min-width: 200px;
+  margin-top: 2em;
+  margin-right: 2em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li:hover {
+  background-color: #eee;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  border-bottom: 1px solid lightgray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
+
+/* Style the close button (span) */
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {background: #bbb;}
+
+                          /* Dropdown End */
 
 .vl {
   border-left: 2px solid #584e63;
@@ -60,8 +130,7 @@ body {
 .profile-img {
   border-radius: 50%;
   height: 50px;
-  margin-right: -.8em;
-
+  margin-right: .6em;
 }
 h2,
 h3 {
@@ -116,8 +185,7 @@ input {
   list-style-type: none;
 }
 
-.traffic-nav-link:active,
-.traffic-nav-link:visited {
+.traffic-nav-link:active {
   color: white;
   width: auto;
   padding: .5em;;
@@ -131,7 +199,7 @@ canvas {
     max-width: 100%;
 }
 
-                              /* Media queries */
+                      /* Media queries Start */
 @media (min-width: 768px) {
 
   header {
@@ -161,3 +229,4 @@ canvas {
     left: 77%;
   }
 }
+                      /* Media queries End */
