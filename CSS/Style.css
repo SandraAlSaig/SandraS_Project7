@@ -199,6 +199,35 @@ canvas {
     max-width: 100%;
 }
 
+.social-box {
+  padding: 1em;
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-around;
+  min-height: 100px;
+  min-width: 70px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1em;
+  border: 1px solid gray;
+  border-radius: 6px;
+  background-color: lightgray
+}
+.social-text {
+  height: 100px;
+  width: 60%;
+  padding: 1.2em;
+}
+
+
+.social-image {
+  margin-top: 1em;
+}
+
+
+
                       /* Media queries Start */
 @media (min-width: 768px) {
 
@@ -227,6 +256,10 @@ canvas {
 
   .vl {
     left: 77%;
+  }
+
+  .social-box{
+
   }
 }
                       /* Media queries End */
