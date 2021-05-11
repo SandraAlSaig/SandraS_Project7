@@ -17,6 +17,7 @@ body {
   grid-template-rows: 70px 60px 1fr;
 }
 
+                                 /* Header Elements Start */
 
 .Header {
   color: white;
@@ -26,115 +27,121 @@ body {
   padding: .7em;
 }
 
-                                  /* Navigation Bar */
+.vl {
+  border-left: 2px solid #584e63;
+  height: 50px;
+  margin-top: .6em;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 60px;
+  /* margin-right: -2em; */
+  padding: .3em;
+}
+
+#studentName {
+  padding-top: .7em;
+}
+
+                             /* Header Elements End */
+
+                            /* Notification SVG Start */
+
+#bellsvg {
+margin-top: 1em;
+height: 30px;
+margin-right: .5em;
+
+}
+
+                            /* Notification SVG End */
+
+                              /* Dropdown Start*/
+#dropBtn {
+display: flex;
+}
+
+.dropbtn {
+background-color: lime;
+height: 5px;
+width: 5px;
+border-radius: 50%;
+color: white;
+border: none;
+cursor: pointer;
+margin-top: 1em;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+border-radius: 10%;
+border: 1px solid lightgray;
+min-width: 200px;
+margin-top: 2em;
+margin-right: 2em;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content li:hover {
+background-color: #eee;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+border-bottom: 1px solid lightgray;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+            /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+display:block;
+}
+
+/* Style the close button (span) */
+.close {
+cursor: pointer;
+position: absolute;
+top: 50%;
+right: 0%;
+padding: 12px 16px;
+transform: translate(0%, -50%);
+}
+
+.close:hover {background: #bbb;}
+
+                                  /* Dropdown End */
+
+
+                              /* Navigation Bar Start */
 .nav-bar {
   background-color: #584e63;
   padding-top: .2em;
   padding-left: 15%;
   padding-right: 15%;
 
-}
-.main-content {
-  background-color: white;
-  overflow: auto;
-}
-
-#bellsvg {
-  margin-top: 1em;
-  height: 30px;
-  margin-right:  1.3em;
-}
-                        /* Dropdown Start*/
-#dropBtn {
-  display: flex;
-}
-
-.dropbtn {
-  background-color: lime;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-top: 1em;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: block;
-
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  border-radius: 10%;
-  border: 1px solid lightgray;
-  min-width: 200px;
-  margin-top: 2em;
-  margin-right: 2em;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content li:hover {
-  background-color: #eee;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  border-bottom: 1px solid lightgray;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-  display:block;
-}
-
-/* Style the close button (span) */
-.close {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  padding: 12px 16px;
-  transform: translate(0%, -50%);
-}
-
-.close:hover {background: #bbb;}
-
-                          /* Dropdown End */
-
-.vl {
-  border-left: 2px solid #584e63;
-  height: 50px;
-  margin-top: .6em;
-  position: absolute;
-  left: 47%;
-  top: 0;
-}
-
-.profile-img {
-  border-radius: 50%;
-  height: 50px;
-  margin-right: .6em;
-}
-h2,
-h3 {
-  padding-top: .5em;
 }
 
 .home-icon,
@@ -148,6 +155,26 @@ h3 {
 a {
     text-decoration: none;
 }
+
+                                /* Navigation Bar End */
+
+                                /* Main Elements Start */
+
+.main-content {
+  background-color: white;
+  overflow: auto;
+}
+
+h2 {
+  padding-top: .5em;
+}
+.titles {
+  padding: 1em;
+}
+
+                                 /* Main Elements End */
+
+                                /* Dashboard DIV Start */
 
 .dashboard {
   padding-left: 1em;
@@ -164,15 +191,24 @@ a {
 input {
   padding: .5em;
   width: 100%;
-  background-color: lightgrey;
+  background-color: #d6d6d6;
   height: 60px;
   border: 1px solid grey;
 }
+
+                                  /* Dashboard DIV End */
+
+                                  /* Alert DIV Start */
 
 .alert {
   border: 1px solid black;
   min-height: 50px;
 }
+
+                                  /* Alert DIV End */
+
+                                /* Canvas DIV Start */
+
 .traffic {
   margin: auto;
   width: 90%;
@@ -199,34 +235,75 @@ canvas {
     max-width: 100%;
 }
 
+                                /* Canvas DIV End */
+
+                                /* Social STATS Start */
+
 .social-box {
-  padding: 1em;
+  width: 90%;
+  margin: auto;
+}
+.social-box h3 {
+  padding: 1.4em;
 }
 
 .social-container {
   display: flex;
   justify-content: space-around;
-  min-height: 100px;
-  min-width: 70px;
-  width: 90%;
-  margin: auto;
+  height: 100px;
   margin-bottom: 1em;
   border: 1px solid gray;
   border-radius: 6px;
-  background-color: lightgray
+  background-color: #d6d6d6;
 }
 .social-text {
   height: 100px;
   width: 60%;
   padding: 1.2em;
+  color: #584e63;
 }
 
+.social-text p {
+  font-size: 1.2em;
+  text-shadow: 0 0 3px #6e6d6d;
+}
+
+.social-text h1 {
+  font-size: 2.3em;
+}
 
 .social-image {
   margin-top: 1em;
 }
 
+                              /* Social STATS End */
 
+                            /* New Members DIV Start */
+.member {
+  width: 100%;
+  margin:auto;
+}
+
+.member-container {
+  max-height: 160px;
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid #6e6d6d;
+  padding: .5em;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 70px;
+  margin-left: 38%;
+}
+
+.member-text,
+.date {
+  text-align: center;
+}
+
+                            /* New Members DIV End */
 
                       /* Media queries Start */
 @media (min-width: 768px) {
@@ -255,10 +332,13 @@ canvas {
   }
 
   .vl {
-    left: 77%;
+    left: 79%;
   }
 
-  .social-box{
+  .social-box {
+    display: inline-flex;
+  }
+  .social-container {
 
   }
 }
