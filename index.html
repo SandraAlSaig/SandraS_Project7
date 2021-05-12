@@ -65,8 +65,9 @@
     </div>
 
                                       <!-- Traffic -->
-    <h3 class="titles">TRAFFIC</h3>
+
     <section class="traffic">
+      <h3 class="titles">TRAFFIC</h3>
       <div class="traffic-header">
         <ul>
           <li class="traffic-nav-link">Hourly</li>
@@ -80,16 +81,16 @@
       </div>
     </section>
 
-    <h3 class="titles">DAILY TRAFFIC</h3>
-    <section>
-      <div class="daily">
+    <section class="daily">
+      <h3 class="titles">DAILY TRAFFIC</h3>
+      <div>
         <canvas id="daily-chart"></canvas>
       </div>
     </section>
 
-    <h3 class="titles">MOBILE USERS</h3>
-    <section>
-      <div class="doughnut">
+    <section class="doughnut">
+      <h3 class="titles">MOBILE USERS</h3>
+      <div>
         <canvas id="doughnut-chart"></canvas>
       </div>
     </section>
@@ -148,7 +149,7 @@
         <a href="#">k.richards@example.com</a>
       </div>
       <div class="date">
-        <p>5/21/2020</p>
+        <p>10/15/20</p>
       </div>
     </div>
 
@@ -159,7 +160,7 @@
         <a href="#">kyle.summers@example.com</a>
       </div>
       <div class="date">
-        <p>12/28/2020</p>
+        <p>10/15/20</p>
       </div>
     </div>
 
@@ -170,27 +171,110 @@
         <a href="#">Jessica.nguyen@example.com</a>
       </div>
       <div class="date">
-        <p>12/31/2020</p>
+        <p>10/15/20</p>
       </div>
     </div>
 
-    <div class="member-container">
+    <div class="member-container last">
         <img src="images/member-4.jpg" class="profile-image" alt="member-4">
       <div class="member-text">
         <p>Joe Johnson</p>
         <a href="#">joe.johnson1@example.com</a>
       </div>
       <div class="date">
-        <p>6 Hours ago</p>
+        <p>10/15/20</p>
       </div>
     </div>
   </section>
 
+                              <!-- New Members End-->
+
+                              <!-- Recent Activity Start -->
+
+  <section class="activity">
+    <h3 class="titles">RECENT ACTIVITY</h3>
+  <div class="activity-container">
+      <img src="images/member-1.jpg" class="profile-image" alt="member-1">
+    <div class="activity-text">
+      <p>Victoria Chambers commented on <b class="activity-subject">WebApp's</b></p>
+      <p class="activity-subject"><b> SEO Tips</b></p>
+    </div>
+    <div class="date">
+      <p>7 minutes ago</p>
+    </div>
+  </div>
+
+  <div class="activity-container">
+      <img src="images/member-2.jpg" class="profile-image" alt="member-2">
+    <div class="activity-text">
+      <p>Dale Byrd liked the post <b class="activity-subject">Facbook's Changers for 2021</b></p>
+    </div>
+    <div class="date">
+      <p>2 hours ago</p>
+    </div>
+  </div>
+
+  <div class="activity-container">
+      <img src="images/member-3.jpg" class="profile-image" alt="member-3">
+    <div class="activity-text">
+      <p>Dawn Wood commented on <b class="activity-subject">Facbook's Changers for 2021</b></p>
+    </div>
+    <div class="date">
+      <p>5 hours ago</p>
+    </div>
+  </div>
+
+  <div class="activity-container last">
+      <img src="images/member-4.jpg" class="profile-image" alt="member-4">
+    <div class="activity-text">
+      <p>Dan Oliver posted on <b class="activity-subject">WebApp's SEO Tips</b></p>
+    </div>
+    <div class="date">
+      <p>1 day ago</p>
+    </div>
+  </div>
+  </section>
 
 
 
+                              <!-- Recent Activity End -->
+
+                              <!-- Mesage Board Start -->
+
+  <section class="message">
+    <h3 class="titles">MESSAGE USER</h3>
+    <form class="message-board">
+      <input type="text" placeholder="Search for user" class="form-field" id="userField">
+      <textarea placeholder="Message for user" id="messageField" class="form-area"></textarea>
+      <button class="msgButton" id="sendBtn">Send</button>
+    </form>
+  </section>
+
+                              <!-- Mesage Board End -->
+
+                              <!-- Toggle Start -->
 
 
+
+                              <!-- Toggle End -->
+
+                              <!-- Timezone Start -->
+
+<section class="settings">
+  <h3 class="titles">SETTINGS</h3>
+
+  <select class="timezone-field" id="timeZone">
+    <option disabled selected>Select a Timezone</option>
+    <option>Eastern</option>
+    <option>Pacific</option>
+  </select>
+  <div class="settings-button">
+    <button class="button-primary" id="save"> Save </button>
+    <button type="button-disabled" id="cancel"> Cancel </button>
+  </div>
+</section>
+
+                              <!-- Timezone End -->
     </main>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
