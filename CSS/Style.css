@@ -201,10 +201,19 @@ input {
                                   /* Alert DIV Start */
 
 .alert {
-  border-top: 1px solid #d6d6d6;
-  border-bottom: 1px solid #d6d6d6;
-  min-height: 50px;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  padding: .4em;
+  color: #FFFFFF;
+  background-color: #7e728a;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px #bfbfbf;
 }
+  .alert-banner-close {
+    margin-left: 2em;
+  }
+
 
                                   /* Alert DIV End */
 
@@ -326,6 +335,10 @@ canvas {
 .activity-subject {
     text-shadow: 0 0 3px #7e728a;
   }
+
+  div.date2 {
+    margin-left: 38%;
+  }
                             /* Recent Activity End */
 
                             /* Message Board Start */
@@ -431,6 +444,10 @@ main {
     grid-area: nav;
   }
 
+  .alert-banner-close {
+    padding-left: 21em;
+  }
+
   main {
     grid-area: main;
   }
@@ -466,40 +483,42 @@ main {
     padding: .5em;
   }
   .daily h3 {
-    padding-bottom: 9em;
+    padding-bottom: 7em;
   }
   .member-container {
     display: flex;
     justify-content: space-between;
   }
   .profile-image {
-    margin-left: 0;
+  margin-left: 1em;
   }
-  div.member-text {
-    margin-left: -45%;
+  .member-text,
+  .emails {
     justify-content: flex-start;
+    min-width: 400px;
   }
-
-  .date {
-    margin-right: 0;
-  }
-
   .activity-container {
-    display: flex;
-    max-height: 120px;
+    margin-bottom: 1em;
+  }
 
-  }
-  .profile-image {
+  .activity-text {
     margin-left: 0;
+    width: 80%;
+    margin-top: -3.5em;
   }
-  div.activity-text {
-    max-height: 100px;
-  }
+
+
 }
 
 @media (min-width: 768px) {
   .dashboard, .alert, .traffic, .social-box, .member, .activity, .message, .settings {
     grid-column: 1/ span 2;
+  }
+
+  .date2 {
+    width: 80%;
+
+
   }
 }
 
@@ -507,11 +526,18 @@ main {
   .daily {
     grid-column: 1/ span 1;
   }
-}
-
-@media (min-width: 768px) {
   .doughnut {
     grid-column: 2/ span 1;
+
   }
+  #doughnut-chart,
+  #daily-chart {
+    height: 200px;
+  }
+  #daily-chart {
+    margin-bottom: 3em;
+  }
+
 }
+
                       /* Media queries End */
