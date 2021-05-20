@@ -76,7 +76,7 @@ cursor: pointer;
 margin-top: 1em;
 }
 
-/* The container <div> - needed to position the dropdown content */
+/* The container Div- needed to position the dropdown content */
 .dropdown {
 position: relative;
 display: block;
@@ -380,6 +380,52 @@ textarea {
 
                             /* Toggle Start */
 
+span {
+  padding-right: 3em;
+  padding-top: .5em;
+  font-size: 1.1em;
+  text-shadow: 0 0 5px #7e728a
+}
+
+.toggle-switch {
+  display: flex;
+  margin: 1em;
+  width: 90%;
+  height: 70px;
+}
+
+.switch {
+  position : relative ;
+  display : inline-block;
+  width : 60px;
+  height : 30px;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+.switch::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: white;
+  top: 1px; // TO GIVE AN EFFECT OF CIRCLE INSIDE SWITCH.
+  left: 1px;
+  transition: all 0.6s;
+}
+
+#toggle:checked + .switch::after {
+  left : 30px;
+}
+.checkbox:checked + .switch {
+  background-color: #7e728a;
+}
+
+.checkbox {
+   display : none;
+}
+
                             /* Toggle End */
 
                             /* Timezone Start */
@@ -488,9 +534,11 @@ main {
   .member-container {
     display: flex;
     justify-content: space-between;
+    min-height: 100px;
   }
   .profile-image {
   margin-left: 1em;
+  height: 70px;
   }
   .member-text,
   .emails {
@@ -499,6 +547,7 @@ main {
   }
   .activity-container {
     margin-bottom: 1em;
+    min-height: 100px;
   }
 
   .activity-text {
