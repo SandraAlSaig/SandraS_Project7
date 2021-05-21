@@ -32,14 +32,13 @@ body {
   height: 50px;
   margin-top: .6em;
   position: absolute;
-  left: 50%;
+  left: 46%;
   top: 0;
 }
 
 .profile-img {
   border-radius: 50%;
   height: 60px;
-  /* margin-right: -2em; */
   padding: .3em;
 }
 
@@ -511,7 +510,7 @@ main {
   }
 
   .vl {
-    left: 79%;
+    left: 76%;
   }
 
   .social-box {
