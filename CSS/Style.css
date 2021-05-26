@@ -390,7 +390,7 @@ span {
   display: flex;
   margin: 1em;
   width: 90%;
-  height: 70px;
+  height: 60px;
 }
 
 .switch {
@@ -504,15 +504,12 @@ main {
     "nav main";
   }
 
-
   h2 {
     width: 70%;
   }
-
   .vl {
     left: 76%;
   }
-
   .social-box {
     display: inline-flex;
   }
@@ -520,7 +517,6 @@ main {
     margin-right: .5em;
     padding: .3em;
   }
-
   .traffic-header ul {
     justify-content: flex-end;
   }
@@ -539,38 +535,20 @@ main {
   margin-left: 1em;
   height: 70px;
   }
-  .member-text,
-  .emails {
-    justify-content: flex-start;
-    min-width: 400px;
-  }
   .activity-container {
-    margin-bottom: 1em;
     min-height: 100px;
   }
-
   .activity-text {
     margin-left: 0;
     width: 80%;
     margin-top: -3.5em;
   }
-
-
-}
-
-@media (min-width: 768px) {
   .dashboard, .alert, .traffic, .social-box, .member, .activity, .message, .settings {
     grid-column: 1/ span 2;
   }
-
   .date2 {
     width: 80%;
-
-
   }
-}
-
-@media (min-width: 768px) {
   .daily {
     grid-column: 1/ span 1;
   }
@@ -586,6 +564,23 @@ main {
     margin-bottom: 3em;
   }
 
+}
+
+@media (min-width: 1024px) {
+  .member, .message {
+    grid-column: 1/ span 1;
+  }
+  .activity, .settings {
+    grid-column: 2/ span 1;
+
+  }
+  .social-container {
+    width: 32%;
+    margin: auto;
+  }
+  .vl {
+    left: 79%;
+  }
 }
 
                       /* Media queries End */
