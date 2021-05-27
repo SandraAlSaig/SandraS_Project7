@@ -582,7 +582,10 @@ main {
     left: 79%;
   }
   #daily-chart {
-    margin-bottom: 6em;
+    margin-bottom: 6.5em;
+  }
+  .daily h3 {
+    padding-bottom: 6.5em;
   }
 }
 
