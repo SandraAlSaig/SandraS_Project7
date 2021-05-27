@@ -524,7 +524,7 @@ main {
     padding: .5em;
   }
   .daily h3 {
-    padding-bottom: 7em;
+    padding-bottom: 6em;
   }
   .member-container {
     display: flex;
@@ -554,14 +554,14 @@ main {
   }
   .doughnut {
     grid-column: 2/ span 1;
+  }
 
+  #doughnut-chart {
+  /* #daily-chart { */
+    height: 100px;
   }
-  #doughnut-chart,
   #daily-chart {
-    height: 200px;
-  }
-  #daily-chart {
-    margin-bottom: 3em;
+    margin-bottom: 3.8em;
   }
 
 }
@@ -580,6 +580,9 @@ main {
   }
   .vl {
     left: 79%;
+  }
+  #daily-chart {
+    margin-bottom: 6em;
   }
 }
 
