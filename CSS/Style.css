@@ -539,17 +539,17 @@ main {
   .activity-container {
     min-height: 100px;
   }
-  .activity-text {
-  
-    width: 80%;
-    margin-top: -3.5em;
-    margin-left: 102px;
-  }
   .member-text,
   .activity-text {
     margin-right: auto;
     margin-left: 22px;
     text-align: left; /*Sam's change*/
+
+  }
+  .activity-text {
+    width: 80%;
+    margin-top: -3.5em;
+    margin-left: 102px;
   }
   .date {
     margin-left: auto;
@@ -558,8 +558,9 @@ main {
   .dashboard, .alert, .traffic, .social-box, .member, .activity, .message, .settings {
     grid-column: 1/ span 2;
   }
-  .date2 {
+  div.date2 {
     width: 80%;
+    margin-left: 100px;
   }
   .daily {
     grid-column: 1/ span 1;
