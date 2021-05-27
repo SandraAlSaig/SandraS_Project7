@@ -543,6 +543,17 @@ main {
     margin-left: 0;
     width: 80%;
     margin-top: -3.5em;
+    margin-left: 102px;
+  }
+  .member-text,
+  .activity-text {
+    margin-right: auto;
+    margin-left: 22px;
+    text-align: left; /*Sam's change*/
+  }
+  .date {
+    margin-left: auto;
+    margin-right: 0; /*Sam's change*/
   }
   .dashboard, .alert, .traffic, .social-box, .member, .activity, .message, .settings {
     grid-column: 1/ span 2;
