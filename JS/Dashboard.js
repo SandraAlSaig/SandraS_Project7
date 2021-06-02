@@ -17,7 +17,11 @@ alertBanner.innerHTML =
   alertBanner.addEventListener('click', e => {
     const element = e.target;
     if (element.classList.contains("alert-banner-close")) {
-      alert.style.display = "none"
+      alert.style.display = "hidden"
 
     }
   });
+
+bellSvg.addEventListener('mouseover', e => {
+  
+})

@@ -54,6 +54,12 @@ body {
 margin-top: 1em;
 height: 30px;
 margin-right: .5em;
+}
+
+#bellsvg:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: all 0.3s ease-in-out 0s;
 
 }
 
