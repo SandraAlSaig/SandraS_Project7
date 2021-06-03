@@ -17,11 +17,11 @@ alertBanner.innerHTML =
   alertBanner.addEventListener('click', e => {
     const element = e.target;
     if (element.classList.contains("alert-banner-close")) {
-      alert.style.display = "hidden"
+      alert.style.display = "none";
 
     }
   });
 
 bellSvg.addEventListener('mouseover', e => {
-  
+
 })
