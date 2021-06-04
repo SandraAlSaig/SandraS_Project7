@@ -58,9 +58,8 @@ margin-right: .5em;
 
 #bellsvg:hover {
   cursor: pointer;
-  transform: rotate(360deg);
-  transition: all 0.3s ease-in-out 0s;
-
+  transform: rotate(45deg);
+  transition: all 0.1s ease-in-out 0s;
 }
 
                             /* Notification SVG End */
