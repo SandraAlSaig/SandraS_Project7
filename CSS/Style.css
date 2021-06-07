@@ -233,17 +233,24 @@ input {
   padding: 1em;
   list-style-type: none;
 }
-.traffic-nav-link {
-  
-}
-.traffic-nav-link:active {
+.traffic-nav-link:hover {
   color: white;
   width: auto;
   padding: .5em;;
   padding-left: .6em;
   padding-right: .6em;
   background-color: #584e63;
-  border-radius: 38%;
+  border-radius: 20px;
+}
+.traffic-nav-link:active {
+  color: white;
+  width: auto;
+  padding: .2em;;
+  padding-left: .6em;
+  padding-right: .6em;
+  background-color: #584e63;
+  border-radius: 20px;
+
 }
 
 canvas {
