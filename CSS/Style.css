@@ -233,7 +233,9 @@ input {
   padding: 1em;
   list-style-type: none;
 }
-
+.traffic-nav-link {
+  
+}
 .traffic-nav-link:active {
   color: white;
   width: auto;
