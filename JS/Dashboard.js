@@ -3,6 +3,7 @@ let trafficNav = document.querySelectorAll('.traffic-nav-link');
 let alertBanner = document.getElementById('alert');
 const trafficCanvas = document.querySelector('#traffic-chart');
 const doughnutCanvas = document.querySelector('#doughnut-chart');
+
 const user = document.getElementById('userField');
 const message = document.getElementById('messageField');
 const send = document.getElementById('sendBtn');
