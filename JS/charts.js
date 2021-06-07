@@ -1,6 +1,6 @@
 
 function chartHourly (data){
-  trafficData.laabels
+  trafficData.labels
 };
 
                 let trafficData = {
