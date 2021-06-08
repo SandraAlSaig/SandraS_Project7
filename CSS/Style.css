@@ -358,6 +358,10 @@ canvas {
   div.date2 {
     margin-left: 38%;
   }
+
+  .activityTag{
+    display: none;
+  }
                             /* Recent Activity End */
 
                             /* Message Board Start */
@@ -578,6 +582,8 @@ main {
   .activityTag{
     margin-left: 98%;
     margin-top: -2em;
+    clear: both;
+    display: block;
   }
   #activityImg {
     margin-top: 1em;
