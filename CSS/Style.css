@@ -287,9 +287,10 @@ canvas {
   background-color: #d6d6d6;
 }
 .social-text {
-  height: 100px;
+  height: 80px;
   width: 60%;
-  padding: 1.2em;
+  padding: 1em;
+  padding-bottom: .4em;
   color: #584e63;
 }
 
@@ -303,7 +304,13 @@ canvas {
 }
 
 .social-image {
-  margin-top: 1em;
+  margin-top: 1.2em;
+  margin-bottom: .2em;
+  padding: .7em;
+  background-color: #584e63;
+  border: 1px solid #584e63;
+  border-radius: 50%;
+
 }
 
                               /* Social STATS End */
@@ -561,12 +568,19 @@ main {
   }
   .activity-text {
     width: 80%;
-    margin-top: -3.5em;
+    margin-top: -3em;
     margin-left: 102px;
   }
   .date {
     margin-left: auto;
     margin-right: 0; /*Sam's change*/
+  }
+  .activityTag{
+    margin-left: 98%;
+    margin-top: -2em;
+  }
+  #activityImg {
+    margin-top: 1em;
   }
   .dashboard, .alert, .traffic, .social-box, .member, .activity, .message, .settings {
     grid-column: 1/ span 2;
